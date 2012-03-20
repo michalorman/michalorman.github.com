@@ -1,0 +1,4 @@
+pygments: true
+permalink: /:year/:month/:title
+markdown: rdiscount
+exclude: ["Gemfile", "Gemfile.lock", "Rakefile"]
