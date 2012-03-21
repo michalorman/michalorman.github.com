@@ -40,7 +40,42 @@
     </section>
 
     <footer id="main-foot">
-      <div id="recent-posts">
+      <div id="links">
+        <nav>
+          <h3>Recent Posts</h3>
+          <ul>
+            {% for post in site.posts limit: 10 %}
+            <li>
+              {{ post.date | date_to_string }} &middot;
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+        <nav>
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <a href="http://github.com/michalorman">GitHub Profile</a>
+            </li>
+            <li>
+              <a href="http://linkedin.com/in/michalorman">LinkedIn Profile</a>
+            </li>
+            <li>
+              <a href="http://www.slideshare.net/morman">SlideShare</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="copyright">
+        <p>
+          &copy; Michał Orman
+        </p>
+        <p>
+          Powered
+          by <a href="http://github.com/mojombo/jekyll">Jekyll</a>
+          and <a href="http://disqus.com/comments/">Disqus</a>.
+        </p>
       </div>
     </footer>
   </body>

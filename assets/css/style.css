@@ -70,6 +70,12 @@ h1 {
   border-bottom: 1px solid rgba(112, 128, 144, 0.2);
 }
 
+h3 {
+  font-size: 1.4em;
+  color: #708090;
+  margin-bottom: 15px;
+}
+
 p {
   margin-bottom: 20px;
 }
@@ -160,6 +166,28 @@ nav li {
 #main-foot {
   border-top: 1px solid #708090;
   margin-top: 40px;
+  padding: 20px;
+  font-size: 0.8em;
+}
+
+#main-foot #links {
+  overflow: hidden;
+}
+
+#main-foot nav {
+  float: left;
+  margin-right: 30px;
+  width: 33%;
+}
+
+#main-foot #copyright {
+  text-align: center;
+  margin: 20px 0;
+  color: #777;
+}
+
+#main-foot #copyright p {
+  margin: 0;
 }
 
 #main-content {
@@ -173,5 +201,31 @@ nav li {
 .post header h3 {
   color: #708090;
   margin-bottom: 10px;
-  padding: 5px 0;
+  font-size: 0.9em;
+}
+
+.k, .kd, .kt, .kn, .nb, .nt, .kc {
+  color: #708090;
+  font-weight: bold;
+}
+
+.s, .s1, .s2, .sh, .sr {
+  color: #2F4F4F;
+}
+
+.si {
+  color: #778899;
+}
+
+.ss {
+  color: #2F4F4F;
+}
+
+.nd {
+  color: rgba(112, 128, 144, 0.9);
+}
+
+.na {
+  color: #708090;
+  font-style: italic;
 }
