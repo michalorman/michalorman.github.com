@@ -1,0 +1,17 @@
+<div class="post">
+  <header>
+    <h1>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
+    <h3>
+      {{ page.date | date_to_string }} &middot;
+      {% for tag in page.tags %}
+      <a href="/tags/{{ tag }}">{{ tag }}</a> &middot;
+      {% endfor %}
+    </h3>
+  </header>
+
+  <section>
+    {{ content }}
+  </section>
+</div>

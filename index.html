@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
-<div id="recent-posts">
-  {% for page in site.posts limit:5 %}{% assign body = page.content %}<div class="recent-post">{% include section-post.html %}</div>{% endfor %}
+<div>
+  {% for page in site.posts limit:5 %}
+  {% assign content = page.content %}
+  {% include post-div.html %}
+  {% endfor %}
 </div>
