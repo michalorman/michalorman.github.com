@@ -63,14 +63,7 @@ a:hover {
 }
 
 nav li {
-  display: inline;
-}
-
-nav span.separator {
-  font-size: 2em;
-  color: #708090;
-  vertical-align: middle;
-  margin: 0 5px 0 10px;
+  display: list-item;
 }
 
 #main-head {
@@ -84,7 +77,40 @@ nav span.separator {
   font-size: 1.25em;
   position: absolute;
   right: 20px;
-  top: 55px;
+}
+
+#main-head nav li {
+  float: left;
+  height: 90px;
+  position: relative;
+}
+
+#main-head nav li.separator {
+  font-size: 2em;
+  color: #708090;
+  margin: 0 5px;
+  position: relative;
+  top: 50px;
+}
+
+#main-head nav li a {
+  position: relative;
+  top: 60px;
+}
+
+#main-head nav li.item {
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0 10px;
+}
+
+#main-head nav li.item:hover {
+  background-color: #D1DAE3;
 }
 
 #banner {
