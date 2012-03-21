@@ -1,0 +1,10 @@
+<nav id="tagged-posts">
+  <ul>
+    {% for post in posts %}
+    <li>
+      <span class="post-date">{{ post.date | date_to_string }}</span> &middot;
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

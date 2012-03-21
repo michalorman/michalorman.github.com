@@ -47,12 +47,14 @@ table {
 
 html {
   border-top: 4px solid #708090;
+  padding-bottom: 50px;
 }
 
 body {
   width: 1000px;
   margin: 0 auto;
   line-height: 1.5em;
+  font-family: "Palatino", "Times", "Georgia", serif;
 }
 
 a {
@@ -60,7 +62,7 @@ a {
 }
 
 a:hover {
-  color: #696969;
+  color: #2F4F4F;
 }
 
 h1 {
@@ -81,7 +83,6 @@ p {
 }
 
 pre {
-  font-family: monospace;
   border: 1px solid #708090;
   background-color: rgba(112, 128, 144, 0.2);
   border-radius: 10px;
@@ -95,7 +96,11 @@ pre:hover {
 }
 
 code {
-  font-family: monospace;
+  font: 0.9em "Courier", monospace;
+}
+
+strong {
+  font-weight: bold;
 }
 
 nav li {
@@ -127,12 +132,12 @@ nav li {
   color: #708090;
   margin: 0 5px;
   position: relative;
-  top: 100px;
+  top: 98px;
 }
 
 #main-head nav li a {
-  position: relative;
-  top: 100px;
+  display: block;
+  padding-top: 100px;
 }
 
 #main-head nav li.item {
@@ -182,7 +187,7 @@ nav li {
 
 #main-foot #copyright {
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
   color: #777;
 }
 
@@ -204,9 +209,21 @@ nav li {
   font-size: 0.9em;
 }
 
+#tagged-posts {
+  margin: 40px;
+}
+
+.post-date {
+  color: #696969;
+}
+
 .k, .kd, .kt, .kn, .nb, .nt, .kc {
   color: #708090;
   font-weight: bold;
+}
+
+.nv {
+  color: #708090;
 }
 
 .s, .s1, .s2, .sh, .sr {

@@ -11,25 +11,25 @@
 
   <body>
     <header id="main-head">
-      <a id="banner" href="/" alt="Home">
+      <a id="banner" href="/" title="michalorman.com">
         michalorman<span>.com</span>
       </a>
       <nav>
         <ul>
           <li class="item">
-            <a href="/">Home</a>
+            <a href="/" title="Home">Home</a>
           </li>
           <li class="separator">
             &middot;
           </li>
           <li class="item">
-            <a href="/about">About</a>
+            <a href="/about" title="About">About</a>
           </li>
           <li class="separator">
             &middot;
           </li>
           <li class="item">
-            <a href="/contact">Contact</a>
+            <a href="/contact" title="Contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -47,7 +47,7 @@
             {% for post in site.posts limit: 10 %}
             <li>
               {{ post.date | date_to_string }} &middot;
-              <a href="{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -56,13 +56,14 @@
           <h3>Links</h3>
           <ul>
             <li>
-              <a href="http://github.com/michalorman">GitHub Profile</a>
+              <a href="http://github.com/michalorman" title="GitHub Profile">GitHub Profile</a>
             </li>
             <li>
-              <a href="http://linkedin.com/in/michalorman">LinkedIn Profile</a>
+              <a href="http://linkedin.com/in/michalorman"
+              title="LinkedIn Profile">LinkedIn Profile</a>
             </li>
             <li>
-              <a href="http://www.slideshare.net/morman">SlideShare</a>
+              <a href="http://www.slideshare.net/morman" title="SlideShare">SlideShare</a>
             </li>
           </ul>
         </nav>
@@ -73,8 +74,8 @@
         </p>
         <p>
           Powered
-          by <a href="http://github.com/mojombo/jekyll">Jekyll</a>
-          and <a href="http://disqus.com/comments/">Disqus</a>.
+          by <a href="http://github.com/mojombo/jekyll" title="Jekyll">Jekyll</a>
+          and <a href="http://disqus.com/comments/" title="Disqus">Disqus</a>.
         </p>
       </div>
     </footer>
