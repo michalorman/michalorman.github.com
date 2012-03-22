@@ -281,6 +281,19 @@ nav li {
   margin: 5px;
 }
 
+.pagination {
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.pagination .previous {
+  float: right;
+}
+
+.pagination .next {
+  float: left;
+}
+
 .k, .kd, .kt, .kn, .nb, .nt, .kc {
   color: #708090;
   font-weight: bold;
@@ -309,4 +322,8 @@ nav li {
 .na {
   color: #708090;
   font-style: italic;
+}
+
+.lineno {
+  color: #9E9E9E;
 }
