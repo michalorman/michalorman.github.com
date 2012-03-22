@@ -187,6 +187,45 @@ nav li {
   margin-top: 40px;
   padding: 20px;
   font-size: 0.8em;
+  position: relative;
+  overflow: hidden;
+}
+
+#main-foot #feed {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  right: 30px;
+}
+
+#main-foot #feed img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 96px;
+  height: 96px;
+}
+
+#main-foot #feed-inactive {
+  transition: opacity 750ms;
+  -webkit-transition: opacity 750ms linear;
+  -moz-transition: opacity 750ms;
+  -o-transition: opacity 750ms;
+  -ms-transition: opacity 750ms;
+  z-index: 2;
+}
+
+#main-foot #feed-inactive:hover {
+  opacity: 0;
+}
+
+#main-foot #feed-active {
+  z-index: 1;
+}
+
+#main-foot #feed-link {
+  display: block;
+  z-index: 3;
 }
 
 #main-foot #links {
