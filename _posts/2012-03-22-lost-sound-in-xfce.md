@@ -2,15 +2,15 @@
 layout: post
 tags: [linux, xfce]
 ---
-Recently on my Xubuntu I've lost sound. There was no particular reason
+Lately I've lost sound on my Xubuntu. There was no particular reason
 for this. Sound was working and suddenly it was gone. It turned out
-that for some reason sound wasn't sent to the analog output but to the
-HDMI output, while my laptop consist of 2 output devices. The solution
+that for some reason sound wasn't sent to the analog output device but to the
+HDMI, while my laptop has 2 output devices. The solution
 was to use `pavucontrol` tool which is able to switch default output
-device (while default xfce mixer cannot do this).
+device (while default Xfce mixer cannot do this).
 
-I've digged a little bit more in this regard. First if you curious how
-many output devices your system detects you can use this command:
+I've digged a little bit more in this regard. To check how many
+devices system detects `aplay` command may be used:
 
 {% highlight bash %}
 $ aplay -l
@@ -23,8 +23,9 @@ card 1: NVidia [HDA NVidia], device 3: HDMI 0 [HDMI 0]
   Subdevice #0: subdevice #0
 {% endhighlight %}
 
-My machine has 2 cards. To check which one is currently used as
-default output device view content of the following file:
+Output proves that both output devices were correctly detected on my machine. To
+check which one is currently used as default output device we need to
+look into `~/.pulse` directory, and view content of `*-default-sink` file:
 
 {% highlight bash %}
 $ cat ~/.pulse/638ad76668415c922af89aab00000006-default-sink 
