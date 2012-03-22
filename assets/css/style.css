@@ -53,8 +53,8 @@ html {
 body {
   width: 1000px;
   margin: 0 auto;
-  line-height: 1.5em;
-  font-family: "Palatino", "Times", "Georgia", serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 a {
@@ -66,14 +66,20 @@ a:hover {
 }
 
 h1 {
-  font-size: 1.8em;
+  font: 1.6em "Palatino", "Times", "Georgia", serif;
   color: #708090;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(112, 128, 144, 0.2);
 }
 
+h2 {
+  font: 1.5em "Palatino", "Times", "Georgia", serif;
+  color: #708090;
+  margin-bottom: 15px;
+}
+
 h3 {
-  font-size: 1.4em;
+  font: 1.4em "Palatino", "Times", "Georgia", serif;
   color: #708090;
   margin-bottom: 15px;
 }
@@ -96,11 +102,19 @@ pre:hover {
 }
 
 code {
-  font: 0.9em "Courier", monospace;
+  font-family: "Courier", monospace;
+}
+
+pre code {
+  font-size: 10pt;
 }
 
 strong {
   font-weight: bold;
+}
+
+q {
+  font-style: italic;
 }
 
 nav li {
@@ -116,12 +130,12 @@ nav li {
 }
 
 #main-head nav {
-  font-size: 1.25em;
   position: absolute;
   right: 20px;
 }
 
 #main-head nav li {
+  font: 1.25em "Palatino", "Times", "Georgia", serif;
   float: left;
   height: 130px;
   position: relative;
@@ -132,12 +146,12 @@ nav li {
   color: #708090;
   margin: 0 5px;
   position: relative;
-  top: 98px;
+  top: 97px;
 }
 
 #main-head nav li a {
   display: block;
-  padding-top: 100px;
+  padding-top: 105px;
 }
 
 #main-head nav li.item {
@@ -156,11 +170,11 @@ nav li {
 }
 
 #banner {
-  font-size: 3em;
+  font: 3.5em "Palatino", "Times", "Georgia", serif;
   color: #708090;
   text-shadow: 1px 1px 3px #888;
   position: absolute;
-  top: 88px;
+  top: 68px;
   left: 20px;
 }
 
@@ -206,7 +220,7 @@ nav li {
 .post header h3 {
   color: #708090;
   margin-bottom: 10px;
-  font-size: 0.9em;
+  font: 0.8em Verdana, Arial, Helvetica, sans-serif;
 }
 
 #tagged-posts {
@@ -215,6 +229,56 @@ nav li {
 
 .post-date {
   color: #696969;
+}
+
+.page-content {
+  margin-top: 30px;
+}
+
+#about #photo {
+  float: left;
+  border-radius: 10px;
+  border: 1px solid #708090;
+  width: 30%;
+  height: 30%;
+  margin: 0 20px 10px 0;
+  box-shadow: 0 5px 10px #696969;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+
+#about #photo:hover {
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+}
+
+#contact ul {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#contact #tax-id {
+  margin-bottom: 10px;
+}
+
+#contact #phone {
+  margin-top: 10px;
+}
+
+#tags {
+  margin: 50px auto;
+  width: 500px;
+}
+
+#tags li {
+  display: inline;
+  margin: 5px;
 }
 
 .k, .kd, .kt, .kn, .nb, .nt, .kc {

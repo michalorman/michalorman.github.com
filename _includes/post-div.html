@@ -8,6 +8,7 @@
       {% for tag in page.tags %}
       <a href="/tags/{{ tag }}" title="{{ tag }}">{{ tag }}</a> &middot;
       {% endfor %}
+      <a href="{{ page.url }}/#disqus_thread" title="Comment">Comment</a>
     </h3>
   </header>
 
