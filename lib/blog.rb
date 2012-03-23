@@ -2,8 +2,8 @@ require 'core_ext'
 
 module Blog
   class Post
-    def initialize(title, tags)
-      @post_file = "#{timestamp}-#{title.to_file_name}.md"
+    def initialize(title, tags = nil)
+      @post_file = "#{title.to_file_name}.md"
       @tags = tags
     end
 
@@ -11,14 +11,32 @@ module Blog
       @tags.each do |tag|
         Tag.create(tag)
       end
-      File.open(File.join("_posts", @post_file), 'w+') do |f|
+      file = "#{timestamp}-#@post_file"
+      File.open(File.join("_posts", file), 'w+') do |f|
         f.puts content
       end
-      puts "Created post '#@post_file'"
+      puts "Created post '#{file}'"
+    end
+
+    def exist?
+      !Dir["_posts/*#@post_file"].empty?
+    end
+
+    def delete
+      if exist?
+        Dir["_posts/*#@post_file"].each do |f|
+          puts "Deleting post: #{f}"
+          rm f, :verbose => false
+        end
+      end
     end
 
     def self.create(title, tags)
       Post.new(title, tags).create
+    end
+
+    def self.delete(title)
+      Post.new(title).delete
     end
 
     private
@@ -59,8 +77,19 @@ END
       end
     end
 
+    def delete
+      if exist?
+        puts "Removing tag: #@tag"
+        rmtree @tag_dir, :verbose => false
+      end
+    end
+
     def self.create(tag)
       Tag.new(tag).create
+    end
+
+    def self.delete(tag)
+      Tag.new(tag).delete
     end
 
     private

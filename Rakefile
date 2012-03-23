@@ -10,6 +10,11 @@ namespace :post do
     Blog::Post.create(args.title, args.tags.split)
   end
 
+  desc 'Remove post'
+  task :rm, :title do |t, args|
+    Blog::Post.delete(args.title)
+  end
+
 end
 
 namespace :tag do
@@ -17,6 +22,11 @@ namespace :tag do
   desc 'Create new tag'
   task :new, :tag do |t, args|
     Blog::Tag.create(args.tag)
+  end
+
+  desc 'Remove tag'
+  task :rm, :tag do |t, args|
+    Blog::Tag.delete(args.tag)
   end
 
 end
