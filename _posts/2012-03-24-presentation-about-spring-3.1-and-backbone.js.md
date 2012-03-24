@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [spring,backbone.js]
+tags: [spring, backbone.js]
 ---
 Presentation I've lately done about integration of
 [Spring 3.1](http://www.springsource.org/) and
