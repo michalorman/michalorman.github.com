@@ -49,7 +49,7 @@ module Blog
       <<-END
 ---
 layout: post
-tags: [#{@tags * ','}]
+tags: [#{@tags * ', '}]
 ---
 END
     end
