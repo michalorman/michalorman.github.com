@@ -13,8 +13,7 @@ title="Integration of Backbone.js with Spring 3.1"
 target="_blank">Integration of Backbone.js with Spring
 3.1</a></strong> <iframe
 src="http://www.slideshare.net/slideshow/embed_code/12129376"
-width="425" height="355" frameborder="0" marginwidth="0"
-marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0
+width="425" height="355"></iframe> <div style="padding:5px 0
 12px"> View more <a
 href="http://www.slideshare.net/thecroaker/death-by-powerpoint"
 target="_blank">PowerPoint</a> from <a

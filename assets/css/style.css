@@ -198,7 +198,14 @@ nav li {
   right: 30px;
 }
 
-#main-foot #feed img {
+#main-foot #validation {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  right: 130px;
+}
+
+#main-foot a img {
   position: absolute;
   left: 0;
   top: 0;
@@ -206,7 +213,7 @@ nav li {
   height: 96px;
 }
 
-#main-foot #feed-inactive {
+#main-foot .link-inactive {
   transition: opacity 750ms;
   -webkit-transition: opacity 750ms linear;
   -moz-transition: opacity 750ms;
@@ -215,17 +222,12 @@ nav li {
   z-index: 2;
 }
 
-#main-foot #feed-inactive:hover {
-  opacity: 0;
-}
-
-#main-foot #feed-active {
+#main-foot .link-active {
   z-index: 1;
 }
 
-#main-foot #feed-link {
-  display: block;
-  z-index: 3;
+#main-foot .link-inactive:hover {
+  opacity: 0;
 }
 
 #main-foot #links {

@@ -50,9 +50,23 @@
 
     <footer id="main-foot">
       <div id="feed">
-        <a href="/atom.xml">
-          <img id="feed-inactive" src="/assets/images/feed_inactive.png" alt="Feed" />
-          <img id="feed-active" src="/assets/images/feed_active.png" alt="Feed" />
+        <a href="/atom.xml" title="Subscribe feed">
+          <img src="/assets/images/feed_inactive.png"
+               class="link-inactive"
+               alt="Feed" />
+          <img src="/assets/images/feed_active.png"
+               class="link-active"
+               alt="Feed" />
+        </a>
+      </div>
+      <div id="validation" title="Validate markup">
+        <a href="http://validator.w3.org/check?verbose=1&uri=http://michalorman.com/{{ page.url }}">
+          <img src="/assets/images/html_logo_inactive.png"
+               class="link-inactive"
+               alt="Valid HTML5" />
+          <img src="/assets/images/html_logo_active.png"
+               class="link-active"
+               alt="Valid HTML5" />
         </a>
       </div>
       <div id="links">
