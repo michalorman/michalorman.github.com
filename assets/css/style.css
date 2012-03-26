@@ -282,12 +282,12 @@ nav li {
 }
 
 #about img {
-  border-radius: 10px;
-  border: 1px solid #708090;
-  box-shadow: 0 5px 10px #696969;
+  -moz-border-radius: 10px;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px #696969;
   transition: all 500ms;
   -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
+  -moz-tra/nsition: all 500ms;
   -o-transition: all 500ms;
   -ms-transition: all 500ms;
   z-index: 100;
