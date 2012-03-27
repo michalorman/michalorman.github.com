@@ -121,6 +121,12 @@ nav li {
   display: list-item;
 }
 
+blockquote {
+  padding: 0 20px;
+  font-style: italic;
+  color: #AEAEAE;
+}
+
 #main-head {
   border-bottom: 1px solid #708090;
   overflow: hidden;
@@ -287,7 +293,7 @@ nav li {
   box-shadow: 0 4px 10px #696969;
   transition: all 500ms;
   -webkit-transition: all 500ms;
-  -moz-tra/nsition: all 500ms;
+  -moz-transition: all 500ms;
   -o-transition: all 500ms;
   -ms-transition: all 500ms;
   z-index: 100;
