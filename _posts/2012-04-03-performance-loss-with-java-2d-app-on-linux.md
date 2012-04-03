@@ -10,5 +10,5 @@ property:
     -Dsun.java2d.xrender=true
 
 In one of the applications I'm currently working on the new pipeline
-gave about 20x boost. Rendering that used to take about 20ms now
+gave about 20x performance boost. Rendering that used to take about 20ms now
 takes ~1ms.
