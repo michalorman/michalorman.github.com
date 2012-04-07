@@ -346,12 +346,8 @@ blockquote p {
   margin: 0 auto;
 }
 
-#contact #tax-id {
-  margin-bottom: 10px;
-}
-
-#contact #phone {
-  margin-top: 10px;
+#contact li.separate {
+  margin-top: 15px;
 }
 
 #tags {
