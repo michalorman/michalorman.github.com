@@ -56,6 +56,8 @@ END
   end
 
   class Tag
+    include FileUtils
+
     def initialize(tag)
       @tag = tag.to_file_name
       @tag_dir = File.join("tags", @tag)
