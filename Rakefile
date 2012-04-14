@@ -15,6 +15,11 @@ namespace :post do
     Blog::Post.delete(args.title)
   end
 
+  desc 'Rename post'
+  task :rename, :old_title, :new_title do |_, args|
+    Blog::Post.rename(args.old_title, args.new_title)
+  end
+
 end
 
 namespace :tag do
