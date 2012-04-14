@@ -282,6 +282,11 @@ blockquote p {
   padding-top: 5px;
 }
 
+.post img {
+  display: block;
+  margin: 0 auto;
+}
+
 #tagged-posts {
   margin: 40px;
 }

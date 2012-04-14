@@ -30,3 +30,12 @@ namespace :tag do
   end
 
 end
+
+namespace :server do
+
+  desc 'Start server'
+  task :start do
+    system 'jekyll --server --auto'
+  end
+
+end
