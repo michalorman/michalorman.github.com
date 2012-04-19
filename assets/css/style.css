@@ -113,6 +113,10 @@ strong {
   font-weight: bold;
 }
 
+em {
+  font-style: italic;
+}
+
 q {
   font-style: italic;
 }
