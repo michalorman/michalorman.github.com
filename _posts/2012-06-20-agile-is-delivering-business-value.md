@@ -31,6 +31,6 @@ I would say that there are no methodologies that prevent you from being
 agile. You can be agile even in waterfall. Being agile doesn't mean
 doing Scrum or Kanban. In fact not always you can use those
 methodologies in some cases more formal approach is
-required. Everything depends on certain context. If you can deliver
+required (or you apply some formalisms on top of Scrum or Kanban). Everything depends on certain context. If you can deliver
 business value in a adaptive way you are agile no matter the
 methodology or approach.
