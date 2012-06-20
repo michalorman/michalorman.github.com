@@ -23,7 +23,7 @@ The true is that there are no agile or non-agile methodologies by
 definition. It is the people that make those methodologies agile. In
 fact I'm able to prove everybody that PRINCE2 is no less agile than
 Scrum or Kanban (and I've heard the same about PMBOK or RUP). If people
-define processes and procedures that prevent them to deliver business
+define processes and procedures that prevent them from delivering business
 values, and respond to changes, it is the problem of procedures not
 the methodology itself.
 
