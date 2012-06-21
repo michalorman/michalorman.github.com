@@ -352,6 +352,21 @@ blockquote p {
   -ms-transform: scale(2);
 }
 
+#about #ocpjp-cert {
+  float: left;
+  width: 30%;
+  height: 30%;
+  margin: 0 20px 10px 0;
+}
+
+#about #ocpjp-cert:hover {
+  transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+}
+
 #contact ul {
   width: 800px;
   margin: 0 auto;
