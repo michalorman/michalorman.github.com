@@ -6,9 +6,9 @@ Two last days I've spent on the conference about **Agile in
 business**. Conference was very interesting despite that it wasn't
 much about business. My general observation is that most discussions
 about agile is missing the point. I've realized that after great talk
-of **Arie van Bennekum**. He said:
+of **Arie van Bennekum**. His definition of Agile is:
 
-> Agile is a way of delivering business value in a adaptive way.
+> Serving the business by being adaptive
 
 Most of time people are fighting lightweight vs. traditional methods
 of project management. Scrum or Kanban like those are the only way to do
