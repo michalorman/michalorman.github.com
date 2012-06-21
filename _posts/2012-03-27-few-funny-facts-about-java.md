@@ -23,7 +23,7 @@ public enum Shape {
 }
 {% endhighlight %}
 
-Don't be fooled however. It doesn't mean that enum's has
+Don't be fooled however. It doesn't mean that enum has
 `package-private` constructor which can be invoked from other classes
 within the same package. Java specification states clearly:
 
