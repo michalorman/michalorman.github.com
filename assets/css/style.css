@@ -203,6 +203,13 @@ blockquote p {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 3;
+}
+
+#promoteweb img {
+  position: fixed;
+  top: 40px;
+  right: 40px;
 }
 
 #main-foot {
@@ -236,7 +243,7 @@ blockquote p {
   height: 96px;
 }
 
-#main-foot .link-inactive {
+.link-inactive {
   transition: opacity 750ms;
   -webkit-transition: opacity 750ms linear;
   -moz-transition: opacity 750ms;
@@ -245,11 +252,11 @@ blockquote p {
   z-index: 2;
 }
 
-#main-foot .link-active {
+.link-active {
   z-index: 1;
 }
 
-#main-foot .link-inactive:hover {
+.link-inactive:hover {
   opacity: 0;
 }
 
