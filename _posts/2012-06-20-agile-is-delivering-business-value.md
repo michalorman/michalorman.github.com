@@ -24,13 +24,13 @@ definition. It is the people that make those methodologies agile. In
 fact I'm able to prove everybody that PRINCE2 is no less agile than
 Scrum or Kanban (and I've heard the same about PMBOK or RUP). If people
 define processes and procedures that prevent them from delivering business
-values, and respond to changes, it is the problem of procedures not
+values and responding to changes, it is the problem of procedures not
 the methodology itself.
 
 I would say that there are no methodologies that prevent you from being
 agile. You can be agile even in waterfall. Being agile doesn't mean
 doing Scrum or Kanban. In fact not always you can use those
-methodologies in some cases more formal approach is
+methodologies. In some cases more formal approach is
 required (or you apply some formalisms on top of Scrum or Kanban). Everything depends on certain context. If you can deliver
 business value in a adaptive way you are agile no matter the
-methodology or approach.
+methodology or approach you use.
