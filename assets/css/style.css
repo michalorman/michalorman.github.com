@@ -389,6 +389,32 @@ blockquote p {
   -ms-transform: scale(2);
 }
 
+#badges {
+  position: absolute;
+  top: 30px;
+  left: -50px;
+}
+
+#badges li {
+  position: relative;
+  top: 10px;
+  opacity: 0.2;
+  transition: all 750ms;
+  -webkit-transition: all 750ms;
+  -moz-transition: all 750ms;
+  -o-transition: all 750ms;
+  -ms-transition: all 750ms;
+}
+
+#badges li:hover {
+  opacity: 1;
+  left: 30px;
+}
+
+#badges img {
+  box-shadow: none;
+}
+
 #contact ul {
   width: 800px;
   margin: 0 auto;
