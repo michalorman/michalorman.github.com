@@ -1,150 +1,150 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>
-			Michal Orman's Personal Blog
-			{% if page.title %}
-				- {{ page.title }}
-			{% endif %}
-		</title>
-		<meta name="description" content="Michal Orman personal
-		blog. Java, Ruby, Software Engineering and more."/>
-		<link rel="stylesheet" type="text/css"
-		href="/assets/css/style.css"/>
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<script type="text/javascript">
-			var disqus_developer = 0;
-			</script>
-		</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      Michal Orman's Personal Blog
+      {% if page.title %}
+        - {{ page.title }}
+      {% endif %}
+    </title>
+    <meta name="description" content="Michal Orman personal
+    blog. Java, Ruby, Software Engineering and more."/>
+    <link rel="stylesheet" type="text/css"
+    href="/assets/css/style.css"/>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script type="text/javascript">
+      var disqus_developer = 0;
+      </script>
+    </head>
 
-		<body>
-			<header id="main-head">
-			<a id="banner" href="/" title="michalorman.com">
-				michalorman<span>.com</span>
-			</a>
-			<nav>
-			<ul>
-				<li class="item">
-				<a href="/" title="Home">Home</a>
-				</li>
-				<li class="separator">
-				&middot;
-				</li>
-				<li class="item">
-				<a href="/about" title="About">About</a>
-				</li>
-				<li class="separator">
-				&middot;
-				</li>
-				<li class="item">
-				<a href="/contact" title="Contact">Contact</a>
-				</li>
-			</ul>
-			</nav>
-			<a id="gh-ribbon" href="http://github.com/michalorman" title="Fork me on GitHub">
-				<img src="/assets/images/gh-ribbon.png" alt="Fork me on GitHub">
-			</a>
-			<a id="promoteweb" href="https://developer.mozilla.org/docs/?WT.mc_id=mdn8" title="Better Web docs for a better Web on MDN">>
-				<img src="/assets/images/promoteweb_inactive.png"
-				class="link-inactive"
-				alt="Better Web docs for a better Web on MDN" />
-				<img src="/assets/images/promoteweb_active.png"
-				class="link-active"
-				alt="Better Web docs for a better Web on MDN" />
-			</a>
+    <body>
+      <header id="main-head">
+      <a id="banner" href="/" title="michalorman.com">
+        michalorman<span>.com</span>
+      </a>
+      <nav>
+      <ul>
+        <li class="item">
+        <a href="/" title="Home">Home</a>
+        </li>
+        <li class="separator">
+        &middot;
+        </li>
+        <li class="item">
+        <a href="/about" title="About">About</a>
+        </li>
+        <li class="separator">
+        &middot;
+        </li>
+        <li class="item">
+        <a href="/contact" title="Contact">Contact</a>
+        </li>
+      </ul>
+      </nav>
+      <a id="gh-ribbon" href="http://github.com/michalorman" title="Fork me on GitHub">
+        <img src="/assets/images/gh-ribbon.png" alt="Fork me on GitHub">
+      </a>
+      <a id="promoteweb" href="https://developer.mozilla.org/docs/?WT.mc_id=mdn8" title="Better Web docs for a better Web on MDN">
+        <img src="/assets/images/promoteweb_inactive.png"
+        class="link-inactive"
+        alt="Better Web docs for a better Web on MDN" />
+        <img src="/assets/images/promoteweb_active.png"
+        class="link-active"
+        alt="Better Web docs for a better Web on MDN" />
+      </a>
 
-			</header>
+      </header>
 
-			<section id="main-content">
-			{{ content }}
-			</section>
+      <section id="main-content">
+      {{ content }}
+      </section>
 
-			<footer id="main-foot">
-			<div id="feed">
-				<a href="/atom.xml" title="Subscribe feed">
-					<img src="/assets/images/feed_inactive.png"
-					class="link-inactive"
-					alt="Feed" />
-					<img src="/assets/images/feed_active.png"
-					class="link-active"
-					alt="Feed" />
-				</a>
-			</div>
-			<div id="validation" title="Validate markup">
-				<a href="http://validator.w3.org/check?verbose=1&amp;uri=http://michalorman.com/{{ page.url }}">
-					<img src="/assets/images/html_logo_inactive.png"
-					class="link-inactive"
-					alt="Valid HTML5" />
-					<img src="/assets/images/html_logo_active.png"
-					class="link-active"
-					alt="Valid HTML5" />
-				</a>
-			</div>
-			<div id="links">
-				<nav>
-				<h3>Recent Posts</h3>
-				<ul>
-					{% for post in site.posts limit: 10 %}
-						<li>
-						{{ post.date | date_to_string }} &middot;
-						<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-						</li>
-					{% endfor %}
-				</ul>
-				</nav>
-				<nav>
-				<h3>Links</h3>
-				<ul>
-					<li>
-					<a href="http://github.com/michalorman" title="GitHub Profile">GitHub Profile</a>
-					</li>
-					<li>
-					<a href="http://linkedin.com/in/michalorman"
-						title="LinkedIn Profile">LinkedIn Profile</a>
-					</li>
-					<li>
-					<a href="http://www.codeschool.com/users/15605" title="CodeSchool">CodeSchool</a>
-					</li>
-					<li>
-					<a href="http://www.slideshare.net/morman" title="SlideShare">SlideShare</a>
-					</li>
-				</ul>
-				</nav>
-			</div>
-			<div id="copyright">
-				<p>
-				&copy; Michał Orman
-				</p>
-				<p>
-				Powered
-				by <a href="http://github.com/mojombo/jekyll" title="Jekyll">Jekyll</a>
-				and <a href="http://disqus.com/comments/" title="Disqus">Disqus</a>.
-				</p>
-			</div>
-			</footer>
-			<!-- Scripts -->
-			<script type="text/javascript">
-				var disqus_shortname = 'michalormancom';
+      <footer id="main-foot">
+      <div id="feed">
+        <a href="/atom.xml" title="Subscribe feed">
+          <img src="/assets/images/feed_inactive.png"
+          class="link-inactive"
+          alt="Feed" />
+          <img src="/assets/images/feed_active.png"
+          class="link-active"
+          alt="Feed" />
+        </a>
+      </div>
+      <div id="validation" title="Validate markup">
+        <a href="http://validator.w3.org/check?verbose=1&amp;uri=http://michalorman.com/{{ page.url }}">
+          <img src="/assets/images/html_logo_inactive.png"
+          class="link-inactive"
+          alt="Valid HTML5" />
+          <img src="/assets/images/html_logo_active.png"
+          class="link-active"
+          alt="Valid HTML5" />
+        </a>
+      </div>
+      <div id="links">
+        <nav>
+        <h3>Recent Posts</h3>
+        <ul>
+          {% for post in site.posts limit: 10 %}
+            <li>
+            {{ post.date | date_to_string }} &middot;
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        </nav>
+        <nav>
+        <h3>Links</h3>
+        <ul>
+          <li>
+          <a href="http://github.com/michalorman" title="GitHub Profile">GitHub Profile</a>
+          </li>
+          <li>
+          <a href="http://linkedin.com/in/michalorman"
+            title="LinkedIn Profile">LinkedIn Profile</a>
+          </li>
+          <li>
+          <a href="http://www.codeschool.com/users/15605" title="CodeSchool">CodeSchool</a>
+          </li>
+          <li>
+          <a href="http://www.slideshare.net/morman" title="SlideShare">SlideShare</a>
+          </li>
+        </ul>
+        </nav>
+      </div>
+      <div id="copyright">
+        <p>
+        &copy; Michał Orman
+        </p>
+        <p>
+        Powered
+        by <a href="http://github.com/mojombo/jekyll" title="Jekyll">Jekyll</a>
+        and <a href="http://disqus.com/comments/" title="Disqus">Disqus</a>.
+        </p>
+      </div>
+      </footer>
+      <!-- Scripts -->
+      <script type="text/javascript">
+        var disqus_shortname = 'michalormancom';
 
-				(function () {
-				 var s = document.createElement('script'); s.async = true;
-				 s.type = 'text/javascript';
-				 s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-				 (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-				 }());
+        (function () {
+         var s = document.createElement('script'); s.async = true;
+         s.type = 'text/javascript';
+         s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+         }());
 </script>
 <script type="text/javascript">
 
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-30266989-1']);
-	_gaq.push(['_trackPageview']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30266989-1']);
+  _gaq.push(['_trackPageview']);
 
-	(function() {
-	 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	 })();
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
 </script>
   </body>
