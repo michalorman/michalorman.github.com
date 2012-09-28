@@ -346,8 +346,8 @@ blockquote p {
 
 #about #prince2-cert {
   float: right;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   margin: 10px 0 10px 20px;
 }
 
@@ -361,8 +361,8 @@ blockquote p {
 
 #about #ocpjp-cert {
   float: left;
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   margin: 0 20px 10px 0;
 }
 
@@ -376,8 +376,8 @@ blockquote p {
 
 #about #psm1-cert {
   float: right;
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   margin: 0 20px 10px 0;
 }
 
