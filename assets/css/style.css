@@ -288,6 +288,16 @@ blockquote p {
   margin-bottom: 40px;
 }
 
+.post ul {
+  list-style: disc inside;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.post ul li {
+  margin-bottom: 5px;
+}
+
 .post header h3 {
   color: #708090;
   margin-bottom: 10px;
