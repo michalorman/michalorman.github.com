@@ -37,7 +37,7 @@ project and supplier.
 What are the prerequisites? You can use following as checklist, but I'm sure that lot
 of agilists could be able to add more:
 
-* Client is willing to collaborate and understands that delivering products, with
+* Client is willing to collaborate and understands that delivering products with
 highest possible value is the responsibility of both sides not just the supplier's.
 * Organization is ready the change its mindset and delegate the responsibility
 for project realization to the team.
