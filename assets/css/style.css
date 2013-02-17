@@ -59,6 +59,11 @@ body {
 
 a {
   color: #708090;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -ms-transition: all 300ms;
 }
 
 a:hover {
@@ -66,20 +71,20 @@ a:hover {
 }
 
 h1 {
-  font: 1.6em "Palatino", "Times", "Georgia", serif;
+  font: 2.2em Coda, cursive;
   color: #708090;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(112, 128, 144, 0.2);
 }
 
 h2 {
-  font: 1.5em "Palatino", "Times", "Georgia", serif;
+  font: 1.5em Coda, cursive;
   color: #708090;
   margin-bottom: 15px;
 }
 
 h3 {
-  font: 1.4em "Palatino", "Times", "Georgia", serif;
+  font: 1.4em Coda, cursive;
   color: #708090;
   margin-bottom: 15px;
 }
@@ -142,7 +147,7 @@ blockquote p {
   border-bottom: 1px solid #708090;
   overflow: hidden;
   position: relative;
-  height: 140px;
+  height: 150px;
   margin-bottom: 40px;
 }
 
@@ -152,9 +157,9 @@ blockquote p {
 }
 
 #main-head nav li {
-  font: 1.25em "Palatino", "Times", "Georgia", serif;
+  font: 1.25em Coda, cursive;
   float: left;
-  height: 130px;
+  height: 145px;
   position: relative;
 }
 
@@ -187,16 +192,24 @@ blockquote p {
 }
 
 #banner {
-  font: 3.5em "Palatino", "Times", "Georgia", serif;
+  font: 3.5em Coda, cursive;
   color: #708090;
-  text-shadow: 1px 1px 3px #888;
   position: absolute;
   top: 68px;
   left: 20px;
 }
 
 #banner span {
+  transition: text-shadow 500ms;
+  -webkit-transition: text-shadow 500ms;
+  -moz-transition: text-shadow 500ms;
+  -o-transition: text-shadow 500ms;
+  -ms-transition: text-shadow 500ms;
   color: #696969;
+}
+
+#banner:hover span {
+  text-shadow: 0 0 5px #708090;
 }
 
 #gh-ribbon {
@@ -408,7 +421,7 @@ blockquote p {
 #badges li {
   position: relative;
   top: 10px;
-  opacity: 0.2;
+  opacity: 0.1;
   transition: all 750ms;
   -webkit-transition: all 750ms;
   -moz-transition: all 750ms;
