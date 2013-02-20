@@ -71,20 +71,20 @@ a:hover {
 }
 
 h1 {
-  font: 2.2em 'Libre Baskerville', serif;
+  font: 2.2em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   color: #708090;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(112, 128, 144, 0.2);
 }
 
 h2 {
-  font: 1.5em 'Libre Baskerville', serif;
+  font: 1.5em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   color: #708090;
   margin-bottom: 15px;
 }
 
 h3 {
-  font: 1.4em 'Libre Baskerville', serif;
+  font: 1.4em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   color: #708090;
   margin-bottom: 15px;
 }
@@ -161,7 +161,7 @@ blockquote p {
 }
 
 #main-head nav li {
-  font: 1.25em 'Libre Baskerville', serif;
+  font: 1.25em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   float: left;
   height: 185px;
   position: relative;
@@ -172,7 +172,7 @@ blockquote p {
   color: #708090;
   margin: 0 5px;
   position: relative;
-  top: 142px;
+  top: 145px;
 }
 
 #main-head nav li a {
