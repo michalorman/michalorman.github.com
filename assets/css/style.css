@@ -524,3 +524,8 @@ blockquote p {
 .lineno {
   color: #9E9E9E;
 }
+
+.c1 {
+  color: #aaa;
+  font-style: italic;
+}
