@@ -51,10 +51,11 @@ html {
 }
 
 body {
-  width: 1000px;
+  width: 900px;
   margin: 0 auto;
-  font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  line-height: 1.7;
+  font: 16px 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #3A3A3A;
 }
 
 a {
@@ -68,25 +69,26 @@ a {
 
 a:hover {
   color: #2F4F4F;
+  text-decoration: underline;
 }
 
 h1 {
-  font: 2.2em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  font: 26px 'Fjalla One', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   color: #708090;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(112, 128, 144, 0.2);
 }
 
 h2 {
-  font: 1.5em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  font: 22px 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   color: #708090;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 h3 {
-  font: 1.4em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  font: 20px 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   color: #708090;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -94,17 +96,12 @@ p {
 }
 
 pre {
-  border: 1px solid #708090;
-  background-color: rgba(112, 128, 144, 0.2);
-  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  background-color: #F5F5F5;
+  border-radius: 5px;
   padding: 10px;
   margin: 40px 0;
-  box-shadow: inset 0 2px 5px rgba(112, 128, 144, 0.4);
   overflow: hidden;
-}
-
-pre:hover {
-  box-shadow: 0 0 10px rgba(112, 128, 144, 0.8);
 }
 
 code {
@@ -112,7 +109,7 @@ code {
 }
 
 pre code {
-  font-size: 10pt;
+  font-size: 12pt;
   white-space: pre-wrap;
 }
 
@@ -155,13 +152,17 @@ blockquote p {
   margin-bottom: 40px;
 }
 
+#main-head a:hover {
+  text-decoration: none;
+}
+
 #main-head nav {
   position: absolute;
   right: 20px;
 }
 
 #main-head nav li {
-  font: 1.25em 'Antic', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+  font: 18px 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   float: left;
   height: 185px;
   position: relative;
@@ -172,7 +173,7 @@ blockquote p {
   color: #708090;
   margin: 0 5px;
   position: relative;
-  top: 145px;
+  top: 142px;
 }
 
 #main-head nav li a {
@@ -210,10 +211,6 @@ blockquote p {
   -o-transition: text-shadow 500ms;
   -ms-transition: text-shadow 500ms;
   color: #696969;
-}
-
-#banner:hover span {
-  text-shadow: 0 0 5px #708090;
 }
 
 #gh-ribbon {
@@ -284,7 +281,7 @@ blockquote p {
 #main-foot nav {
   float: left;
   margin-right: 30px;
-  width: 33%;
+  width: 45%;
 }
 
 #main-foot #copyright {
@@ -315,11 +312,23 @@ blockquote p {
   margin-bottom: 5px;
 }
 
+.post header h1 a:hover {
+  text-decoration: none;
+}
+
 .post header h3 {
   color: #708090;
   margin-bottom: 30px;
-  font: 0.9em Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   padding-top: 5px;
+}
+
+.post section a {
+  color: #1874CD;
+}
+
+.post section a:hover {
+  color: #104E8B;
 }
 
 .post img {
@@ -484,7 +493,7 @@ blockquote p {
 }
 
 .s, .s1, .s2, .sh, .sr {
-  color: #2F4F4F;
+  color: #CD8500;
 }
 
 .si {
@@ -492,7 +501,11 @@ blockquote p {
 }
 
 .ss {
-  color: #2F4F4F;
+  color: #CD8500;
+}
+
+.sx {
+  color: #5D478B;
 }
 
 .nd {
@@ -502,6 +515,10 @@ blockquote p {
 .na {
   color: #708090;
   font-style: italic;
+}
+
+.no, .nc {
+  color: #6E7B8B;
 }
 
 .lineno {
