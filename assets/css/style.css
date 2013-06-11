@@ -384,7 +384,7 @@ blockquote p {
   float: right;
   width: 20%;
   height: 20%;
-  margin: 10px 0 10px 20px;
+  margin: 20px 0 20px 20px;
 }
 
 #about #prince2-cert:hover {
@@ -399,7 +399,7 @@ blockquote p {
   float: left;
   width: 25%;
   height: 25%;
-  margin: 0 20px 10px 0;
+  margin: 0 20px 20px 0;
 }
 
 #about #ocpjp-cert:hover {
@@ -410,14 +410,22 @@ blockquote p {
   -ms-transform: scale(2);
 }
 
-#about #psm1-cert {
-  float: right;
+#about #psm-i-cert, #about #pspo-i-cert {
   width: 25%;
   height: 25%;
-  margin: 0 20px 10px 0;
 }
 
-#about #psm1-cert:hover {
+#about #psm-i-cert {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+#about #pspo-i-cert {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+#about #psm-i-cert:hover, #about #pspo-i-cert:hover {
   transform: scale(2);
   -moz-transform: scale(2);
   -webkit-transform: scale(2);
