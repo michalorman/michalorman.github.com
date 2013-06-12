@@ -6,7 +6,7 @@
     <h3>
       {{ page.date | date_to_string }} &middot;
       {% for tag in page.tags %}
-      <a href="/tags/{{ tag }}" title="{{ tag }}">{{ tag }}</a> &middot;
+      <a href="/tags/{{ tag }}" title="{{ tag }}" class="tag">{{ tag }}</a> &middot;
       {% endfor %}
       <a href="{{ page.url }}/#disqus_thread" title="Comment">Comment</a>
     </h3>
