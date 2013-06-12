@@ -153,7 +153,7 @@ blockquote p {
 #main-head {
   overflow: hidden;
   position: relative;
-  height: 120px;
+  height: 150px;
   margin-bottom: 70px;
   border-bottom: 1px solid #708090;
 }
@@ -170,7 +170,7 @@ blockquote p {
 #main-head nav li {
   font: 18px 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   float: left;
-  height: 105px;
+  height: 125px;
   position: relative;
 }
 
@@ -179,12 +179,12 @@ blockquote p {
   color: #708090;
   margin: 0 5px;
   position: relative;
-  top: 62px;
+  top: 82px;
 }
 
 #main-head nav li a {
   display: block;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 #main-head nav li.item {
@@ -206,7 +206,7 @@ blockquote p {
   font: 2em 'Paytone One', sans-serif;
   color: #708090;
   position: absolute;
-  top: 38px;
+  top: 64px;
   left: 20px;
 }
 
@@ -342,11 +342,11 @@ blockquote p {
   font-weight: bold;
 }
 
-.post section a {
+.post section a, .page-content a {
   color: #1874CD;
 }
 
-.post section a:hover {
+.post section a:hover, .page-content a:hover {
   color: #104E8B;
 }
 
@@ -364,11 +364,7 @@ blockquote p {
 }
 
 .page-content {
-  margin-top: 30px;
-}
-
-#about {
-  margin-bottom: 140px;
+  margin: 40px 0 80px 0;
 }
 
 #about img {
@@ -454,7 +450,7 @@ blockquote p {
 
 #badges {
   position: absolute;
-  top: 30px;
+  top: 80px;
   left: -50px;
 }
 
@@ -476,6 +472,7 @@ blockquote p {
 
 #badges img {
   box-shadow: none;
+  border: none;
 }
 
 #contact ul {
