@@ -15,6 +15,8 @@
     <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
     <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="atom.xml" type="application/atom+xml" rel="alternate"
+      title="Subscribe Feed">
     <script type="text/javascript">
       var disqus_developer = 0;
       </script>
@@ -51,67 +53,53 @@
         {{ content }}
         </section>
 
-        <footer id="main-foot">
-        <div id="feed">
-          <a href="/atom.xml" title="Subscribe feed">
-            <img src="/assets/images/feed_inactive.png"
-            class="link-inactive"
-            alt="Feed" />
-            <img src="/assets/images/feed_active.png"
-            class="link-active"
-            alt="Feed" />
-          </a>
-        </div>
-        <div id="validation" title="Validate markup">
-          <a href="http://validator.w3.org/check?verbose=1&amp;uri=http://michalorman.com/{{ page.url }}">
-            <img src="/assets/images/html_logo_inactive.png"
-            class="link-inactive"
-            alt="Valid HTML5" />
-            <img src="/assets/images/html_logo_active.png"
-            class="link-active"
-            alt="Valid HTML5" />
-          </a>
-        </div>
-        <div id="links">
-          <nav>
-          <h3>Recent Posts</h3>
-          <ul>
-            {% for post in site.posts limit: 10 %}
+        <footer id="links-foot">
+          <div id="links">
+            <nav>
+            <h3>Recent Posts</h3>
+            <ul>
+              {% for post in site.posts limit: 10 %}
+                <li>
+                {{ post.date | date_to_string }} &middot;
+                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+            </nav>
+            <nav>
+            <h3>Links</h3>
+            <ul>
               <li>
-              {{ post.date | date_to_string }} &middot;
-              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+              <a href="http://github.com/michalorman" title="GitHub Profile">GitHub Profile</a>
               </li>
-            {% endfor %}
-          </ul>
-          </nav>
-          <nav>
-          <h3>Links</h3>
-          <ul>
-            <li>
-            <a href="http://github.com/michalorman" title="GitHub Profile">GitHub Profile</a>
-            </li>
-            <li>
-            <a href="http://linkedin.com/in/michalorman"
-              title="LinkedIn Profile">LinkedIn Profile</a>
-            </li>
-            <li>
-            <a href="http://www.codeschool.com/users/15605" title="CodeSchool">CodeSchool</a>
-            </li>
-            <li>
-            <a href="http://www.slideshare.net/morman" title="SlideShare">SlideShare</a>
-            </li>
-          </ul>
-          </nav>
-        </div>
+              <li>
+              <a href="http://linkedin.com/in/michalorman"
+                title="LinkedIn Profile">LinkedIn Profile</a>
+              </li>
+              <li>
+              <a href="http://www.codeschool.com/users/15605" title="CodeSchool">CodeSchool</a>
+              </li>
+              <li>
+              <a href="http://www.slideshare.net/morman" title="SlideShare">SlideShare</a>
+              </li>
+            </ul>
+            </nav>
+          </div>
         </footer>
       </div>
-      <div id="copyright">
-        <p>
+      <footer id="main-foot">
+        <div id="copyright">
           &copy; 2013 Michał Orman. Powered
           by <a href="http://github.com/mojombo/jekyll" title="Jekyll">Jekyll</a>
           and <a href="http://disqus.com/comments/" title="Disqus">Disqus</a>.
-        </p>
-      </div>
+        </div>
+        <div id="icons">
+          <a href="/atom.xml" title="Subscribe feed">
+            <img src="/assets/images/badge_rss.png" class="badge" alt="Feed" />
+          </a>
+          <a href="http://validator.w3.org/check?verbose=1&amp;uri=http://michalorman.com/{{ page.url }}" title="Validate markup">
+            <img src="/assets/images/badge_html5.png" class="badge" alt="HTML5" /> </a> </div>
+      </footer>
       <!-- Scripts -->
       <script type="text/javascript">
         var disqus_shortname = 'michalormancom';
