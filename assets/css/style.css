@@ -79,20 +79,23 @@ a:hover {
 }
 
 h1 {
-  font: 2em 'Paytone One', sans-serif;
+  font: 2em 'PT Serif', serif;
+  font-weight: bold;
   color: #708090;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(112, 128, 144, 0.2);
 }
 
 h2 {
-  font: 1.8em 'Paytone One', sans-serif;
+  font: 1.8em 'PT Serif', serif;
+  font-weight: bold;
   color: #708090;
   margin-bottom: 20px;
 }
 
 h3 {
-  font: 1.6em 'Paytone One', sans-serif;
+  font: 1.6em 'PT Serif', serif;
+  font-weight: bold;
   color: #708090;
   margin-bottom: 20px;
 }
