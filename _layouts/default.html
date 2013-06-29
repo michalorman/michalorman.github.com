@@ -56,34 +56,34 @@
 
         <footer id="links-foot">
           <div id="links">
-            <nav>
-            <h3>Recent Posts</h3>
-            <ul>
-              {% for post in site.posts limit: 10 %}
-                <li>
-                {{ post.date | date_to_string }} &middot;
-                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
+            <nav id="recent-posts">
+              <h3>Recent Posts</h3>
+              <ul>
+                {% for post in site.posts limit: 10 %}
+                  <li>
+                  {{ post.date | date_to_string }} &middot;
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
             </nav>
-            <nav>
-            <h3>Links</h3>
-            <ul>
-              <li>
-              <a href="http://github.com/michalorman" title="GitHub Profile">GitHub Profile</a>
-              </li>
-              <li>
-              <a href="http://linkedin.com/in/michalorman"
-                title="LinkedIn Profile">LinkedIn Profile</a>
-              </li>
-              <li>
-              <a href="http://www.codeschool.com/users/15605" title="CodeSchool">CodeSchool</a>
-              </li>
-              <li>
-              <a href="http://www.slideshare.net/morman" title="SlideShare">SlideShare</a>
-              </li>
-            </ul>
+            <nav id="other-links">
+              <h3>Links</h3>
+              <ul>
+                <li>
+                <a href="http://github.com/michalorman" title="GitHub Profile">GitHub Profile</a>
+                </li>
+                <li>
+                <a href="http://linkedin.com/in/michalorman"
+                  title="LinkedIn Profile">LinkedIn Profile</a>
+                </li>
+                <li>
+                <a href="http://www.codeschool.com/users/15605" title="CodeSchool">CodeSchool</a>
+                </li>
+                <li>
+                <a href="http://www.slideshare.net/morman" title="SlideShare">SlideShare</a>
+                </li>
+              </ul>
             </nav>
           </div>
         </footer>
