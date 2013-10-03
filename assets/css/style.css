@@ -118,7 +118,8 @@ blockquote p {
 }
 
 pre, pre:before, pre:after,
-#tags, #tags:before, #tags:after {
+#tags, #tags:before, #tags:after,
+#tagged-posts, #tagged-posts:before, #tagged-posts:after {
   border-top: 1px solid #1a1a1a;
   border-bottom: 1px solid #1a1a1a;
   background: #1e1e1e;
@@ -135,14 +136,16 @@ p code {
   border-radius: 5px;
 }
 
-pre, #tags {
+pre, #tags, #tagged-posts {
   padding: 1.5em 0;
   margin-bottom: 2em;
   position: relative;
   word-wrap: break-word;
 }
 
-pre:before, pre:after, #tags:before, #tags:after {
+pre:before, pre:after,
+#tags:before, #tags:after,
+#tagged-posts:before, #tagged-posts:after {
   position: absolute;
   content: "";
   width: 1000px;
@@ -151,11 +154,11 @@ pre:before, pre:after, #tags:before, #tags:after {
   z-index: -1;
 }
 
-pre:before, #tags:before {
+pre:before, #tags:before, #tagged-posts:before {
   right: 100%;
 }
 
-pre:after, #tags:after {
+pre:after, #tags:after, #tagged-posts:after {
   left: 100%;
 }
 
@@ -247,11 +250,15 @@ pre:after, #tags:after {
   font-style: italic;
 }
 
+#tags li, #tagged-posts li {
+  list-style: none;
+  padding: 1em 0;
+  margin: 0;
+}
+
 #tags li {
   display: inline-block;
-  list-style: none;
   padding: 0.5em 1em;
-  margin: 0;
   position: relative;
 }
 
