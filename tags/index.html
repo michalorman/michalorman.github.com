@@ -2,9 +2,11 @@
 layout: default
 title: All Tags
 ---
-<h1>Tags</h1>
+<header>
+  <h1>Tags</h1>
+</header>
 <ul id="tags">
   {% for tag in site.tags %}
   <li><a href="/tags/{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a></li>
   {% endfor %}
-<ul>
+</ul>

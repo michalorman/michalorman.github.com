@@ -6,19 +6,9 @@ Presentation I've lately done about integration of
 [Spring 3.1](http://www.springsource.org/) and
 [Backbone.js](http://documentcloud.github.com/backbone/).
 
-<div style="width:425px" id="__ss_12129376"> <strong
-style="display:block;margin:12px 0 4px"><a
-href="http://www.slideshare.net/morman/integration-of-backbonejs-with-spring-31"
-title="Integration of Backbone.js with Spring 3.1"
-target="_blank">Integration of Backbone.js with Spring
-3.1</a></strong> <iframe
+<div class="presentation" style="width:425px" id="__ss_12129376"><iframe
 src="http://www.slideshare.net/slideshow/embed_code/12129376"
-width="425" height="355"></iframe> <div style="padding:5px 0
-12px"> View more <a
-href="http://www.slideshare.net/thecroaker/death-by-powerpoint"
-target="_blank">PowerPoint</a> from <a
-href="http://www.slideshare.net/morman" target="_blank">Michał
-Orman</a> </div> </div>
+width="425" height="355"></iframe></div>
 
 Presentation isn't that interesting, while it only outlines some new
 features of Spring 3.1 and briefly describes what Backbone.js is. More
