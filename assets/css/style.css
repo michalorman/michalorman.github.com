@@ -56,10 +56,23 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Vollkorn', serif;
+  margin-bottom: 0.5em;
 }
 
 h1 {
   font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
 }
 
 h1 a {
@@ -103,6 +116,10 @@ p {
 
 strong {
   font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 blockquote {
@@ -174,6 +191,10 @@ pre:after, #tags:after, #tagged-posts:after,
 #main-content header {
   margin: 3em 0;
   text-align: center;
+}
+
+#main-content header h1 {
+  margin-bottom: 0;
 }
 
 .post {
