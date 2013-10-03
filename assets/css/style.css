@@ -119,7 +119,8 @@ blockquote p {
 
 pre, pre:before, pre:after,
 #tags, #tags:before, #tags:after,
-#tagged-posts, #tagged-posts:before, #tagged-posts:after {
+#tagged-posts, #tagged-posts:before, #tagged-posts:after,
+#contact-data, #contact-data:before, #contact-data:after {
   border-top: 1px solid #1a1a1a;
   border-bottom: 1px solid #1a1a1a;
   background: #1e1e1e;
@@ -136,7 +137,7 @@ p code {
   border-radius: 5px;
 }
 
-pre, #tags, #tagged-posts {
+pre, #tags, #tagged-posts, #contact-data {
   padding: 1.5em 0;
   margin-bottom: 2em;
   position: relative;
@@ -145,7 +146,8 @@ pre, #tags, #tagged-posts {
 
 pre:before, pre:after,
 #tags:before, #tags:after,
-#tagged-posts:before, #tagged-posts:after {
+#tagged-posts:before, #tagged-posts:after,
+#contact-data:before, #contact-data:after {
   position: absolute;
   content: "";
   width: 1000px;
@@ -154,11 +156,13 @@ pre:before, pre:after,
   z-index: -1;
 }
 
-pre:before, #tags:before, #tagged-posts:before {
+pre:before, #tags:before, #tagged-posts:before,
+#contact-data:before {
   right: 100%;
 }
 
-pre:after, #tags:after, #tagged-posts:after {
+pre:after, #tags:after, #tagged-posts:after,
+#contact-data:after {
   left: 100%;
 }
 
@@ -250,7 +254,8 @@ pre:after, #tags:after, #tagged-posts:after {
   font-style: italic;
 }
 
-#tags li, #tagged-posts li {
+#tags li, #tagged-posts li,
+#contact-data li {
   list-style: none;
   padding: 1em 0;
   margin: 0;
@@ -271,4 +276,8 @@ pre:after, #tags:after, #tagged-posts:after {
 
 #tags li:last-child:after {
   content: '';
+}
+
+#contact-data li {
+  padding: 0.5em 0;
 }
