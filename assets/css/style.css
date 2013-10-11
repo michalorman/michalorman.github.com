@@ -57,6 +57,7 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Poly', serif;
   margin-bottom: 0.5em;
+  color: #c3c3c3;
 }
 
 h1 {
@@ -106,7 +107,7 @@ ul {
 }
 
 li {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   display: list-item;
 }
 
