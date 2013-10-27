@@ -76,12 +76,13 @@ h4 {
   font-size: 1.4em;
 }
 
-h1 a {
+h1 a, h2 a, li a {
   color: #c3c3c3;
 }
 
-h1 a:hover {
+h1 a:hover, h2 a:hover, li a:hover {
   color: #c3c3c3;
+  text-decoration: underline;
 }
 
 a {
@@ -182,6 +183,27 @@ pre:after, #tags:after, #tagged-posts:after,
   left: 100%;
 }
 
+#main-head {
+  padding: 20px 0;
+  margin: 50px 0;
+}
+
+#main-head * {
+  margin: 0;
+}
+
+#main-head a {
+  background: url('/assets/images/ruby.png') top left no-repeat;
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+#main-head a span {
+  display: none;
+}
+
 #main-content {
   max-width: 900px;
   margin: 0 auto;
@@ -194,6 +216,51 @@ pre:after, #tags:after, #tagged-posts:after,
 
 #main-content header h1 {
   margin-bottom: 0;
+}
+
+#main-content hr {
+  width: 30%;
+  margin: 50px auto;
+  border-color: #383838;
+}
+
+#main-foot {
+  font-size: 0.8em;
+  margin: 40px 0;
+}
+
+#main-foot * {
+  margin: 0;
+  padding: 0;
+}
+
+#main-foot ul {
+  list-style: none;
+  text-align: center;
+}
+
+#main-foot li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+#main-foot li:after {
+  content: "∙";
+  padding: 0 5px 0 10px;
+}
+
+#main-foot li:last-child:after {
+  display: none;
+}
+
+#recent-posts {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#recent-posts h2 {
+  font-size: 1.1em;
 }
 
 .post {

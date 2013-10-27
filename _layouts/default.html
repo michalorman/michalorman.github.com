@@ -19,9 +19,25 @@
   </head>
 
   <body>
-    <header id="main-head"></header>
-    <section id="main-content">{{ content }}</section>
-    <footer id="main-foot"></footer>
+    <header id="main-head">
+      <h1>
+        <a href="/"><span>Michal Orman Blog</span></a>
+      </h1>
+    </header>
+    <section id="main-content">
+      <hr>
+      {{ content }}
+      <hr>
+    </section>
+    <footer id="main-foot">
+      <nav>
+        <ul>
+          <li><a href="http://github.com/michalorman">GitHub</a></li>
+          <li><a href="http://www.slideshare.net/morman">SlideShare</a></li>
+          <li><a href="http://www.linkedin.com/in/michalorman">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </footer>
     <!-- Scripts -->
    <script type="text/javascript">
       var disqus_shortname = 'michalormancom';

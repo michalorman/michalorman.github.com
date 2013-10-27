@@ -1,28 +1,10 @@
 ---
 layout: default
 ---
-<div id="posts">
-  {% for page in paginator.posts %}
-  {% assign content = page.content %}
-  {% include post-div.html %}
+<ul id="recent-posts">
+  {% for post in site.posts limit:7 %}
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </li>
   {% endfor %}
-</div>
-<div id="post-pagination" class="pagination">
-
-  {% if paginator.next_page %}
-  <p class="next">
-    <a href="/page{{paginator.next_page}}">&laquo; Older Posts</a>
-  </p>
-  {% endif %}
-
-  {% if paginator.previous_page %}
-  <p class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="/">Newer Posts &raquo;</a>
-    {% else %}
-    <a href="/page{{paginator.previous_page}}">Newer Posts &raquo;</a>
-    {% endif %}
-  </p>
-  {% endif %}
-
-</div>
+</ul>
