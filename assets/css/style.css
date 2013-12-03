@@ -48,16 +48,16 @@ body {
   font: 16pt 'Lato', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  background: #232323;
-  color: #aaa;
-  text-shadow: 0 1px 3px black;
+  background: #F5F5F5;
+  color: #737373;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Poly', serif;
   margin-bottom: 0.5em;
-  color: #c3c3c3;
+  color: #737373;
 }
 
 h1 {
@@ -77,16 +77,16 @@ h4 {
 }
 
 h1 a, h2 a, li a {
-  color: #c3c3c3;
+  color: #737373;
 }
 
 h1 a:hover, h2 a:hover, li a:hover {
-  color: #c3c3c3;
+  color: #737373;
   text-decoration: underline;
 }
 
 a {
-  color: #CD8500;
+  color: #CD8162;
   transition: color 300ms;
   -moz-transition: color 300ms;
   -webkit-transition: color 300ms;
@@ -95,7 +95,8 @@ a {
 }
 
 a:hover {
-  color: #f90;
+  color: #8B5742;
+  text-decoration: underline;
 }
 
 ul, ol {
@@ -125,7 +126,7 @@ em {
 }
 
 blockquote {
-  background: #2c2c2c;
+  background: #F0F0F0;
   padding: 2em;
   border-radius: 15px;
   margin-bottom: 2em;
@@ -140,8 +141,7 @@ pre, pre:before, pre:after,
 #tags, #tags:before, #tags:after,
 #tagged-posts, #tagged-posts:before, #tagged-posts:after,
 #contact-data, #contact-data:before, #contact-data:after {
-  background: #1e1e1e;
-  /* box-shadow: inset 0 1px 0 #151515; */
+  background: #F0F0F0;
 }
 
 code {
@@ -149,7 +149,7 @@ code {
 }
 
 p code {
-  background: #1e1e1e;
+  background: #F0F0F0;
   padding: 0.1em 0.3em;
   border-radius: 5px;
 }
@@ -242,6 +242,15 @@ pre:after, #tags:after, #tagged-posts:after,
 #main-foot li {
   display: inline-block;
   font-weight: bold;
+}
+
+#main-foot li a {
+  color: #CD8162;
+  font-weight: normal;
+}
+
+#main-foot li a:hover {
+  color: #8B5742;
 }
 
 #main-foot li:after {
@@ -337,7 +346,7 @@ pre:after, #tags:after, #tagged-posts:after,
 }
 
 .c1 {
-  color: #555;
+  color: #C0C0C0;
   font-style: italic;
 }
 
