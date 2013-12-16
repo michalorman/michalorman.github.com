@@ -148,6 +148,10 @@ code {
   font-family: 'Inconsolata', monospace;
 }
 
+pre code {
+  font-size: 90%;
+}
+
 p code {
   background: #F0F0F0;
   padding: 0.1em 0.3em;
