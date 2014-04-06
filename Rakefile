@@ -40,7 +40,7 @@ namespace :server do
 
   desc 'Start server'
   task :start do
-    system 'jekyll --server --auto'
+    system 'jekyll serve --watch --drafts'
   end
 
 end
