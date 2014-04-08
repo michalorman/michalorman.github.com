@@ -1,0 +1,146 @@
+body {
+  font-weight: 300;
+}
+
+p, pre, ul, ol {
+  margin-bottom: 30px;
+}
+
+code {
+  font-family: 'Inconsolata', monospace;
+}
+
+pre {
+  background: #F0F0F0;
+  padding: 30px;
+  position: relative;
+  /* white-space: pre; */
+  word-wrap: break-word;
+}
+
+#main-head {
+  padding: 70px 0;
+}
+
+#main-head a {
+  background: url('/assets/images/ruby.png') top left no-repeat;
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+#recent-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#recent-posts h4 {
+  margin: 0;
+}
+
+#recent-posts li {
+  padding-bottom: 30px;
+}
+
+#recent-posts a {
+  color: #737373;
+}
+
+article {
+  margin-bottom: 100px;
+}
+
+article header {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Vollkorn', serif;
+}
+
+article header aside .tag:before {
+  content: '#'
+}
+
+article header h1 a {
+  color: #737373;
+}
+
+article header h1 a:hover {
+  color: #737373;
+}
+
+article section {
+  width: 77.5%;
+  margin: 0 auto;
+}
+
+#main-foot {
+  padding: 40px 0;
+}
+
+#main-foot ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#main-foot li {
+  display: inline-block;
+}
+
+#main-foot li:before {
+  content: "∙";
+  padding: 0 5px;
+}
+
+#main-foot li:first-child:before {
+  content: none;
+}
+
+.k, .kd, .kt, .kn, .nb, .nt, .kc {
+  color: #528B8B;
+}
+
+.nv {
+  color: #708090;
+}
+
+.s, .s1, .s2, .sh, .sr, .mi, .kp {
+  color: #6E8B3D;
+}
+
+.si {
+  color: #778899;
+}
+
+.ss {
+  color: #8B864E;
+}
+
+.sx {
+  color: #8B668B;
+}
+
+.nd {
+  color: rgba(112, 128, 144, 0.9);
+}
+
+.na {
+  color: #708090;
+  font-style: italic;
+}
+
+.no, .nc {
+  color: #6E7B8B;
+}
+
+.lineno {
+  color: #9E9E9E;
+}
+
+.c1 {
+  color: #C0C0C0;
+  font-style: italic;
+}

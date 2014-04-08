@@ -1,16 +1,20 @@
 ---
 layout: default
 ---
-<header>
-  <h1>
-    Posts tagged with <strong>'{{ page.tag }}'</strong>:
-  </h1>
-</header>
-<ul id="tagged-posts">
-  {% for post in site.tags[page.tag] %}
-  <li>
-    <span class="post-date">{{ post.date | date_to_string }}</span> &middot;
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+<article>
+  <header>
+    <h1>
+      Posts tagged with <strong>'{{ page.tag }}'</strong>:
+    </h1>
+  </header>
+  <section>
+    <ul id="tagged-posts">
+      {% for post in site.tags[page.tag] %}
+      <li>
+        <span class="post-date">{{ post.date | date_to_string }}</span> &middot;
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>

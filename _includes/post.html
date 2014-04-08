@@ -1,18 +1,16 @@
-<div class="post">
+<article>
   <header>
     <h1>
       <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
     </h1>
-    <h3>
+    <aside>
       {{ page.date | date_to_string }} &middot;
       {% for tag in page.tags %}
       <a href="/tags/{{ tag }}" title="{{ tag }}" class="tag">{{ tag }}</a> &middot;
       {% endfor %}
       <a href="{{ page.url }}/#disqus_thread" title="Comment">Comment</a>
-    </h3>
+    </aside>
   </header>
 
-  <section>
-    {{ content }}
-  </section>
-</div>
+  <section>{{ content }}</section>
+</article>
