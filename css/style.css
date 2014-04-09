@@ -18,6 +18,10 @@ pre {
   word-wrap: break-word;
 }
 
+blockquote {
+  font-family: 'Vollkorn', serif;
+}
+
 #main-head {
   padding: 70px 0;
 }
