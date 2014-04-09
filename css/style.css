@@ -18,6 +18,11 @@ pre {
   word-wrap: break-word;
 }
 
+p code, li code {
+  background: #F0F0F0;
+  padding: 3px 5px;
+}
+
 blockquote {
   font-family: 'Vollkorn', serif;
 }
