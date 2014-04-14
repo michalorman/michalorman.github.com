@@ -32,7 +32,7 @@ blockquote {
 }
 
 #main-head a {
-  background: url('/assets/images/ruby.png') top left no-repeat;
+  background: url('/img/ruby.png') top left no-repeat;
   display: block;
   width: 110px;
   height: 110px;
