@@ -1,10 +1,43 @@
 ---
 layout: default
 ---
-<ul id="recent-posts">
-  {% for post in site.posts limit:7 %}
-  <li>
-    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-  </li>
-  {% endfor %}
-</ul>
+<section id='recent-posts' class='container-fluid'>
+  <div class='container'>
+    <div class='row-fluid'>
+      <div class='col-md-5'>
+        <h2>Recent Posts</h2>
+      </div>
+      <div class='col-md-7'>
+        <ul>
+          {% for post in site.posts limit:10 %}
+          <li>
+            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id='about-me' class='container-fluid'>
+  <div class='container'>
+    <div class='row-fluid'>
+      <div class='col-md-5'>
+        <h2>About Me</h2>
+        <img src='/img/me.png'>
+      </div>
+      <div class='col-md-7'>
+        <p>
+          Full-stack web developer, agile enthusiast, professional with enterprise
+          background that loves getting things done. Productivity, constant improvement,
+          highest possible quality are my attitudes.
+        </p>
+        <p>
+          Currently im working with <strong>Ruby on Rails</strong> stack and
+          <strong>JavaScript</strong> but my background includes enterprise
+          development in Java/J2EE and embedded development in C/C++.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

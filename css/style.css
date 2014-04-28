@@ -27,6 +27,14 @@ blockquote {
   font-family: 'Vollkorn', serif;
 }
 
+section {
+  padding: 30px 0;
+}
+
+section h2 {
+  margin: 0 0 15px 0;
+}
+
 #main-head {
   padding: 70px 0;
 }
@@ -40,22 +48,39 @@ blockquote {
 }
 
 #recent-posts {
+  background: #eee;
+}
+
+#recent-posts ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
-#recent-posts h4 {
+#recent-posts h5 {
   margin: 0;
 }
 
 #recent-posts li {
-  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+#recent-posts li:last-child {
+  margin: 0;
 }
 
 #recent-posts a {
   color: #737373;
+}
+
+#about-me {
+  background: #cd8162;
+  color: white;
+}
+
+#about-me img {
+  border-radius: 50%;
+  opacity: .8;
 }
 
 article {
@@ -87,6 +112,7 @@ article section {
 
 #main-foot {
   padding: 40px 0;
+  background: #333;
 }
 
 #main-foot ul {
@@ -97,6 +123,7 @@ article section {
 
 #main-foot li {
   display: inline-block;
+  font-size: 125%;
 }
 
 #main-foot li:before {
