@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [oop, patterns]
+tags: [oop, patterns, ruby]
 ---
 Every developer has heard terms like **loose** or **tight coupling** yet still
 a lot have problems maintaining coupling in their codebase. Let's take a look into
