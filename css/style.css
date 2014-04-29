@@ -1,5 +1,6 @@
 body {
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 p, pre, ul, ol {
@@ -11,11 +12,37 @@ code {
 }
 
 pre {
-  background: #F0F0F0;
-  padding: 30px;
-  position: relative;
-  /* white-space: pre; */
+  padding: 30px 0;
   word-wrap: break-word;
+}
+
+.highlight {
+  background: #F0F0F0;
+  position: relative;
+}
+
+.highlight:before {
+  display: block;
+  position: absolute;
+  background: #F0F0F0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 1000px;
+  margin-left: -1000px;
+}
+
+.highlight:after {
+  display: block;
+  position: absolute;
+  background: #F0F0F0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  width: 1000px;
+  margin-right: -1000px;
 }
 
 p code, li code {
@@ -28,7 +55,7 @@ blockquote {
 }
 
 section {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 section h2 {
@@ -45,6 +72,15 @@ section h2 {
   width: 110px;
   height: 110px;
   margin: 0 auto;
+  transition: all 400ms;
+}
+
+#main-head a:hover {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 
 #recent-posts {
@@ -76,15 +112,31 @@ section h2 {
 #about-me {
   background: #cd8162;
   color: white;
+  padding-bottom: 15px;
 }
 
 #about-me img {
   border-radius: 50%;
-  opacity: .8;
+  opacity: .9;
+  margin-left: 20px;
+}
+
+#about-me #contact-info {
+  margin-top: 15px;
+}
+
+#about-me #contact-info i {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+#about-me #contact-info a {
+  color: white;
 }
 
 article {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 article header {
@@ -112,7 +164,11 @@ article section {
 
 #main-foot {
   padding: 40px 0;
-  background: #333;
+  background: #434343;
+}
+
+#main-foot a {
+  color: #999;
 }
 
 #main-foot ul {
@@ -133,6 +189,10 @@ article section {
 
 #main-foot li:first-child:before {
   content: none;
+}
+
+#disqus_thread {
+  margin-bottom: 40px;
 }
 
 .k, .kd, .kt, .kn, .nb, .nt, .kc {
