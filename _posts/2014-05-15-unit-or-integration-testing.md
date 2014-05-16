@@ -131,7 +131,7 @@ core logic.
 
 Focus your efforts on things that matters - application core logic. Test and design
 it well. Ensure that you cross the application borders in a correct way, you
-don't need to test every single case for code that is not core for an application.
+don't need to test every single case for code that is not core for your application.
 Tests for core already are doing that so don't repeat yourself.
 
 [1]: http://rubylove.io/2014/04/25/why-i-can-tdd-and-why-dhh-cant/
