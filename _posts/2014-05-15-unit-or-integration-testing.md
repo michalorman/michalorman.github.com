@@ -94,7 +94,7 @@ None of the above is particularly good to unit test. And also you cannot drive
 the design as the framework or the API's already picked design for you.
 
 Models should be tested against the database, to ensure that queries works well.
-Routing and view is best tested via the tools like Capybara. There is no point to
+Routing and views are best tested via the tools like Capybara. There is no point to
 mock out HTTP protocol.
 
 If you call gem's like Faraday or RestClient, even standard Net::HTTP you really want to
