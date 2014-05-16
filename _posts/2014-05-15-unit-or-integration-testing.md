@@ -126,7 +126,7 @@ Decision is yours and judge well.
 Do not be afraid of indirections (despite what DHH says). **Indirection doesn't destroy
 your design**. With proper naming. simple, clean classes design is even easier to
 understand as you don't need to care about the implementation details. You can even
-say what the system is doing by scanning the name of modules and classes in your
+say what the system is doing by scanning the names of modules and classes in your
 core logic.
 
 Focus your efforts on things that matters - application core logic. Test and design
