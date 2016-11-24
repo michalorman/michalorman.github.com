@@ -114,6 +114,8 @@ body * {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 #personal-info {
@@ -161,17 +163,32 @@ body * {
 }
 
 #timeline {
-  border-left: 2px solid #ededed;
-  padding: 40px 0 40px 25px;
-  width: 800px;
+  width: 100%;
+  position: relative;
+  margin: 50px 0;
+  padding: 50px 0;
+}
+
+#timeline #timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: -40px;
+  width: 1px;
+  background: #FC1443;
 }
 
 #timeline .timeline-item {
-  margin-bottom: 40px;
+  margin-bottom: -60px;
   border: 1px solid #cbcbcb;
   padding: 20px;
   border-radius: 15px;
   position: relative;
+  width: 47%;
+}
+
+#timeline .timeline-item:nth-child(even) {
+  margin-left: 53%;
 }
 
 #timeline .timeline-item:before {
@@ -184,24 +201,38 @@ body * {
   font-family: FontAwesome;
   text-align: center;
   position: absolute;
-  left: -45px;
+  left: -49px;
 }
 
-#timeline .timeline-item:after {
+#timeline .timeline-item:nth-child(odd):before {
+  left: 512px;
+}
+
+#timeline .timeline-item:nth-child(even):after {
   content: '';
   display: block;
   width: 0;
   height: 0;
-  /* border-top: 7px solid transparent; */
-  /* border-bottom: 7px solid transparent; */
-  /* border-left: 7px solid #cfd5da; */
-  /* border-right: 0; */
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-right: 7px solid #cbcbcb;
   position: absolute;
   top: 31px;
   left: -8px;
+}
+
+#timeline .timeline-item:nth-child(odd):after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #cfd5da;
+  border-right: 0;
+  position: absolute;
+  top: 31px;
+  left: 497px;
 }
 
 #timeline .timeline-item.project:before {
@@ -229,7 +260,8 @@ body * {
 }
 
 #timeline .timeline-item .tags .tag {
-  background: #C82117;
+  /* background: #C82117; */
+  background: #FC1443;
   color: white;
   padding: 3px 5px;
   margin-right: 5px;
@@ -238,7 +270,7 @@ body * {
 
 #timeline .timeline-item .timeline-content {
   margin: 40px 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #timeline .timeline-item .timeline-content p {
