@@ -1,0 +1,255 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+html, body {
+  font: 14px 'Noto Serif', serif;
+  line-height: 1.5;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#personal-info {
+  text-align: center;
+}
+
+#personal-info #photo {
+  display: inline-block;
+  border-radius: 100%;
+  padding: 10px 10px 5px 10px;
+  background: #F3F1EC;
+  margin: 30px 0;
+}
+
+#personal-info #photo:after {
+  display: inline-block;
+  content: '';
+  background: url(/img/me.jpg) center center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+#personal-info h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+#personal-info h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #8b8b8b;
+  font-weight: 400;
+}
+
+#personal-info #refs * {
+  color: #8b8b8b;
+  text-decoration: none;
+}
+
+#personal-info .ref {
+  margin-right: 10px;
+}
+
+#timeline {
+  border-left: 2px solid #ededed;
+  padding: 40px 0 40px 25px;
+  width: 800px;
+}
+
+#timeline .timeline-item {
+  margin-bottom: 40px;
+  border: 1px solid #cbcbcb;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+
+#timeline .timeline-item:before {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 100%;
+  color: white;
+  font-family: FontAwesome;
+  text-align: center;
+  position: absolute;
+  left: -45px;
+}
+
+#timeline .timeline-item:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  /* border-top: 7px solid transparent; */
+  /* border-bottom: 7px solid transparent; */
+  /* border-left: 7px solid #cfd5da; */
+  /* border-right: 0; */
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #cbcbcb;
+  position: absolute;
+  top: 31px;
+  left: -8px;
+}
+
+#timeline .timeline-item.project:before {
+  content: '\f126';
+  background: #6FA8DC;
+}
+
+#timeline .timeline-item.job:before {
+  content: '\f0b1';
+  background: #32D8B7;
+}
+
+#timeline .timeline-item header {
+  color: #8b8b8b;
+  position: relative;
+}
+
+#timeline .timeline-item .title {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#timeline .timeline-item .tags {
+  margin: 10px 0;
+}
+
+#timeline .timeline-item .tags .tag {
+  background: #C82117;
+  color: white;
+  padding: 3px 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+#timeline .timeline-item .timeline-content {
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+#timeline .timeline-item .timeline-content p {
+  margin-bottom: 15px;
+}
+
+#timeline .timeline-item footer * {
+  color: #8b8b8b;
+  text-decoration: none;
+}
+
+#timeline .timeline-item footer a, #timeline .timeline-item footer span {
+  margin-right: 10px;
+}
