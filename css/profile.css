@@ -110,6 +110,15 @@ body * {
   box-sizing: border-box;
 }
 
+a, a:hover, a:visited {
+  color: #8b8b8b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 #content {
   display: flex;
   flex-direction: column;
@@ -155,7 +164,6 @@ body * {
 
 #personal-info #refs * {
   color: #8b8b8b;
-  text-decoration: none;
 }
 
 #personal-info .ref {
@@ -174,17 +182,22 @@ body * {
   top: 0;
   left: 50%;
   bottom: -40px;
-  width: 1px;
-  background: #FC1443;
+  width: 2px;
+  /* background: #FC1443; */
+  background: #cbcbcb;
 }
 
 #timeline .timeline-item {
-  margin-bottom: -60px;
+  margin-bottom: -30px;
   border: 1px solid #cbcbcb;
   padding: 20px;
   border-radius: 15px;
   position: relative;
   width: 47%;
+}
+
+#timeline .timeline-item.project {
+  margin-bottom: -60px;
 }
 
 #timeline .timeline-item:nth-child(even) {
@@ -196,6 +209,7 @@ body * {
   width: 35px;
   height: 35px;
   line-height: 35px;
+  font-size: 20px;
   border-radius: 100%;
   color: white;
   font-family: FontAwesome;
@@ -245,6 +259,11 @@ body * {
   background: #32D8B7;
 }
 
+#timeline .timeline-item.certificate:before {
+  content: '\f0a3';
+  background: #FFB812;
+}
+
 #timeline .timeline-item header {
   color: #8b8b8b;
   position: relative;
@@ -279,7 +298,6 @@ body * {
 
 #timeline .timeline-item footer * {
   color: #8b8b8b;
-  text-decoration: none;
 }
 
 #timeline .timeline-item footer a, #timeline .timeline-item footer span {
