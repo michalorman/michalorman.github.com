@@ -14,5 +14,5 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-permalink:  /:year/:month/:title
+permalink:  /:year/:month/:title/
 paginate: 7
