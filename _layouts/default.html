@@ -2,19 +2,37 @@
 <html lang='en_US'>
   <head>
     <meta charset='utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="{{ site.description }}">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Serif" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/tomorrow.css"/>
   </head>
   <body>
-    <header id='sidebar' role='banner'>
-      <nav role='navigation'>
-      </nav>
-    </div>
+    <header id='header' role='banner'>
+      <div class='container'>
+        <h1>
+          <a href='/'>@michalorman<i>.com</i></a>
+        </h1>
+      </div>
+    </header>
 
     <main id='content' role='main'>
-      {{ content }}
+      <div class='container'>
+        {{ content }}
+      </div>
     </main>
+
+    <!-- Scripts -->
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-30266989-1', 'michalorman.com');
+ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
