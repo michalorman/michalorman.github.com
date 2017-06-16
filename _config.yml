@@ -16,3 +16,4 @@ exclude:
   - Gemfile.lock
 permalink:  /:year/:month/:title/
 paginate: 7
+show_drafts: true
