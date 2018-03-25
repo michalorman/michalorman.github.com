@@ -47,8 +47,6 @@ $ npm i -S auth0-js
 
 Now we're ready to go.
 
-# Integrating Auth0 with Vue and Vuex
-
 ## Authentication service
 
 The usage of *auth0.js* is pretty straightforward. Create an instance of
