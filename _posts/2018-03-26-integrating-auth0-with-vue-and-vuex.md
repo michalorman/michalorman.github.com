@@ -47,9 +47,9 @@ $ npm i -S auth0-js
 
 Now we're ready to go.
 
-## Auth0 with Vue and Vuex
+# Integrating Auth0 with Vue and Vuex
 
-### Authentication service
+## Authentication service
 
 The usage of *auth0.js* is pretty straightforward. Create an instance of
 `auth0.WebAuth` providing your client configuration, request type and scope
@@ -88,7 +88,7 @@ Auth0 client. Auth0 will generate that values for you which can be simply copy'n
 to the actual code. The `login` method initiates the authentication flow by redirecting
 user to the Auth0 login dialog.
 
-### Creating user session store
+## Creating user session store
 
 We need a place to instantiate our `Authenticator` and where to keep user session information.
 Since this post is about Vuex let's go ahead and firstly create a store for user session:
