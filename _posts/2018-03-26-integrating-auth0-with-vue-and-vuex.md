@@ -13,7 +13,7 @@ and events handling.
 ### TL;DR
 
 Further in this post I'm describing some of the aspects of the integration.
-If're not interested though you can clone the [example code][3] from GitHub.
+If you're not interested though you can clone the [example code][3] from GitHub.
 
 ## Setup
 
